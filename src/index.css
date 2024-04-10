@@ -4,6 +4,7 @@
   background-color: #270858;
   padding: 10px;
   color: white;
+  cursor: pointer;
 }
 .brand {
   font-weight: bolder;
@@ -43,6 +44,7 @@ input::placeholder {
   background-color: #4b1b78;
   color: white;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .img {
@@ -61,4 +63,11 @@ input::placeholder {
   justify-content: center;
   align-items: center;
   gap: 4rem;
+}
+
+.items {
+  border: 1px solid #4b1b78;
+  &:hover {
+    border: 1px solid white;
+  }
 }
