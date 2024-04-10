@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Product from "./components/Product";
+import ErrorPage from "./components/ErrorPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProductDetail from "./components/ProductDetail";
 import SearchItem from "./components/SearchItem";
@@ -31,6 +32,7 @@ const App = () => {
             path="/cart"
             element={<Cart cart={cart} setCart={setCart} />}
           />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Router>
     </>
