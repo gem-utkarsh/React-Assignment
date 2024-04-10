@@ -14,7 +14,7 @@ const Product = ({ items, cart, setCart }) => {
       imgSrc,
     };
     setCart([...cart, obj]);
-    console.log("Cart element = ", cart);
+
     toast.success("Item added on cart", {
       position: "top-right",
       autoClose: 1500,
